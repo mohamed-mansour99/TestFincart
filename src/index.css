@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0b0b0c; color: #e8e8ea; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.card { background: #131317; border: 1px solid #202028; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.card img { width: 100%; height: 180px; object-fit: cover; background: #1a1a1f; }
+.card-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.price { font-weight: 700; }
+.btn { border: 1px solid #2a2a34; background: #1a1a20; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
+.btn:hover { background: #22222a; }
+.btn.primary { background: #4f46e5; border-color: #4f46e5; color: white; }
+.btn.primary:hover { filter: brightness(1.1); }
+.toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.input { background: #111116; border: 1px solid #2a2a34; color: #e8e8ea; padding: 8px 10px; border-radius: 10px; min-width: 220px; }
+.select { background: #111116; border: 1px solid #2a2a34; color: #e8e8ea; padding: 8px 10px; border-radius: 10px; }
+.badge { background: #222; padding: 4px 8px; border-radius: 999px; border: 1px solid #333; font-size: 12px; }
+.header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px); background: rgba(11,11,12,0.7); border-bottom: 1px solid #1e1e26; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.cart-drawer { position: fixed; right: 0; top: 0; height: 100vh; width: 360px; background: #121218; border-left: 1px solid #222231; padding: 16px; transform: translateX(100%); transition: transform .25s ease; z-index: 50; }
+.cart-drawer.open { transform: translateX(0); }
+.divider { height: 1px; background: #262636; margin: 12px 0; }
+.muted { color: #9aa; }
+.sentinel { height: 24px; }
+.error { background: #2b1114; border: 1px solid #4e1a20; padding: 12px; border-radius: 12px; color: #ffd7db; }
