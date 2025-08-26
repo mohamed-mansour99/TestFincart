@@ -13,6 +13,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+        "vite": "^5.4.19",
     "zustand": "^4.5.2"
 
   },
@@ -26,7 +27,6 @@
     "@vitejs/plugin-react": "^5.0.1",
     "jsdom": "^26.1.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.19",
     "vitest": "^2.1.9"
   }
 }
